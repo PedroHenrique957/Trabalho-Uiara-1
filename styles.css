@@ -137,80 +137,63 @@ body {
   max-width: 100%;
   height: 369px;
   margin: 0 auto;
-  padding: 10px 20px 0;
-  display: grid;
-  grid-template-columns: 1fr 220px 1fr;
-  grid-template-rows: 45px 90px 36px 132px 24px;
-  align-items: start;
-  gap: 0 12px;
+  position: relative;
+  padding: 0;
 }
 
 .team {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  padding-top: 18px;
+  position: absolute;
+  top: 12px;
+  width: 250px;
+  margin: 0;
   font-size: 16px;
   font-weight: bold;
 }
 
 .cards {
+  position: absolute;
+  top: 126px;
+  width: 250px;
   color: #bdc3c7;
   font-size: 15px;
-  grid-row: 3;
-  align-self: start;
-  padding-top: 2px;
 }
 
 .cards-a {
-  grid-column: 1;
+  left: 0;
 }
 
 .cards-b {
-  grid-column: 3;
+  right: 0;
 }
 
 .score {
-  grid-column: 1 / -1;
-  grid-row: 2;
-  align-self: center;
-  min-width: 220px;
+  position: absolute;
+  top: 48px;
+  left: 140px;
+  width: 220px;
   color: #f1c40f;
-  font-size: 52px;
-  line-height: 1;
+  font-size: 58px;
+  line-height: 60px;
   font-weight: bold;
 }
 
 .team-a {
-  grid-column: 1;
-  grid-row: 1;
-  padding-left: 18px;
-}
-
-.team-a .cards {
-  grid-row: 3;
-  margin-top: 14px;
+  left: 0;
 }
 
 .team-b {
-  grid-column: 3;
-  grid-row: 1;
-  padding-right: 18px;
-}
-
-.team-b .cards {
-  margin-top: 14px;
+  right: 0;
 }
 
 .controls {
-  grid-column: 1 / -1;
-  grid-row: 4;
+  position: absolute;
+  top: 176px;
+  left: 0;
+  width: 500px;
   display: grid;
   grid-template-columns: repeat(2, 140px);
   justify-content: center;
-  align-content: start;
-  gap: 8px 30px;
-  padding-top: 16px;
+  gap: 7px 30px;
 }
 
 .controls button {
@@ -234,9 +217,10 @@ body {
 }
 
 .status {
-  grid-column: 1 / -1;
-  grid-row: 5;
-  align-self: end;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 500px;
   margin: 0;
   color: #95a5a6;
   font-size: 14px;
