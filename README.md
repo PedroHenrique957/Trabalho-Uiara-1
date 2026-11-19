@@ -17,12 +17,19 @@ Aplicação desktop feita em Python com Tkinter para registrar gols e cartões d
 
 ## Como executar
 
-No diretório do projeto, execute:
+Para apresentar no Chrome ou Edge, abra o arquivo [index.html](./index.html).
+Você também pode iniciar um servidor local:
 
 ```bash
-pip install Pillow
-python trabalho.py
+python -m http.server 8000
 ```
+
+Depois, acesse `http://localhost:8000`.
+
+O acesso de demonstração é:
+
+- Usuário: `admin`
+- Senha: `1234`
 
 ## Estrutura do projeto
 

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TorcidaNet</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="login-screen" id="login-screen">
+    <section class="login-card" aria-labelledby="login-title">
+      <img src="imagem/image.png" alt="Mascote TorcidaNet" class="login-logo">
+      <h1 id="login-title">Acesso do Mesário</h1>
+      <form id="login-form">
+        <label for="usuario">Usuário</label>
+        <input id="usuario" name="usuario" autocomplete="username" required>
+
+        <label for="senha">Senha</label>
+        <input id="senha" name="senha" type="password" autocomplete="current-password" required>
+
+        <p class="login-error" id="login-error" role="alert"></p>
+        <button class="login-button" type="submit">ENTRAR</button>
+      </form>
+    </section>
+  </main>
+
+  <main class="panel-screen" id="panel-screen" hidden>
+    <header class="live-header">AO VIVO - TorcidaNet</header>
+
+    <section class="panel" aria-label="Painel do mesário">
+      <div class="team team-a">
+        <span>Time A (Casa)</span>
+        <strong class="cards" id="cards-a">🟨 0 &nbsp; | &nbsp; 🟥 0</strong>
+      </div>
+
+      <div class="score" id="score">0 x 0</div>
+
+      <div class="team team-b">
+        <span>Time B (Fora)</span>
+        <strong class="cards" id="cards-b">🟨 0 &nbsp; | &nbsp; 🟥 0</strong>
+      </div>
+
+      <div class="controls" aria-label="Registrar eventos">
+        <button class="goal" data-action="goal" data-team="A">⚽ Gol Time A</button>
+        <button class="yellow" data-action="yellow" data-team="A">🟨 Amarelo A</button>
+        <button class="red" data-action="red" data-team="A">🟥 Vermelho A</button>
+
+        <button class="goal" data-action="goal" data-team="B">⚽ Gol Time B</button>
+        <button class="yellow" data-action="yellow" data-team="B">🟨 Amarelo B</button>
+        <button class="red" data-action="red" data-team="B">🟥 Vermelho B</button>
+      </div>
+
+      <p class="status" id="status">Sistema pronto. Aguardando início do jogo.</p>
+      <button class="reset-button" id="reset-button" type="button">Reiniciar partida</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
