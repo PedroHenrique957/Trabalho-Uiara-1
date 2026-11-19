@@ -18,17 +18,9 @@ function atualizarPainel() {
 }
 
 function entrar() {
-  const usuario = document.querySelector("#usuario").value.trim();
-  const senha = document.querySelector("#senha").value;
-
-  if (usuario === "admin" && senha === "1234") {
-    loginScreen.hidden = true;
-    panelScreen.hidden = false;
-    loginError.textContent = "";
-  } else {
-    loginError.textContent = "Usuário ou senha incorretos.";
-    document.querySelector("#senha").value = "";
-  }
+  loginScreen.hidden = true;
+  panelScreen.hidden = false;
+  loginError.textContent = "";
 }
 
 loginForm.addEventListener("submit", (event) => {
