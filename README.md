@@ -13,12 +13,14 @@ Aplicação desktop feita em Python com Tkinter para registrar gols e cartões d
 
 - Python 3
 - Tkinter (geralmente incluído nas instalações padrão do Python)
+- Pillow
 
 ## Como executar
 
 No diretório do projeto, execute:
 
 ```bash
+pip install Pillow
 python trabalho.py
 ```
 
