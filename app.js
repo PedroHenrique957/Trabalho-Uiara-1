@@ -17,8 +17,7 @@ function atualizarPainel() {
     `🟨 ${state.B.amarelos}   |   🟥 ${state.B.vermelhos}`;
 }
 
-loginForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+function entrar() {
   const usuario = document.querySelector("#usuario").value.trim();
   const senha = document.querySelector("#senha").value;
 
@@ -30,7 +29,14 @@ loginForm.addEventListener("submit", (event) => {
     loginError.textContent = "Usuário ou senha incorretos.";
     document.querySelector("#senha").value = "";
   }
+}
+
+loginForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  entrar();
 });
+
+document.querySelector(".login-button").addEventListener("click", entrar);
 
 document.querySelectorAll(".controls button").forEach((button) => {
   button.addEventListener("click", () => {
