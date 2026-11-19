@@ -25,20 +25,21 @@
   </main>
 
   <main class="panel-screen" id="panel-screen" hidden>
-    <header class="live-header">AO VIVO - TorcidaNet</header>
+    <header class="live-header"><span class="live-dot"></span> AO VIVO - TorcidaNet</header>
 
     <section class="panel" aria-label="Painel do mesário">
       <div class="team team-a">
         <span>Time A (Casa)</span>
-        <strong class="cards" id="cards-a">🟨 0 &nbsp; | &nbsp; 🟥 0</strong>
       </div>
 
       <div class="score" id="score">0 x 0</div>
 
       <div class="team team-b">
         <span>Time B (Fora)</span>
-        <strong class="cards" id="cards-b">🟨 0 &nbsp; | &nbsp; 🟥 0</strong>
       </div>
+
+      <strong class="cards cards-a" id="cards-a">🟨 0 &nbsp; | &nbsp; 🟥 0</strong>
+      <strong class="cards cards-b" id="cards-b">🟨 0 &nbsp; | &nbsp; 🟥 0</strong>
 
       <div class="controls" aria-label="Registrar eventos">
         <button class="goal" data-action="goal" data-team="A">⚽ Gol Time A</button>
@@ -51,7 +52,6 @@
       </div>
 
       <p class="status" id="status">Sistema pronto. Aguardando início do jogo.</p>
-      <button class="reset-button" id="reset-button" type="button">Reiniciar partida</button>
     </section>
   </main>
 

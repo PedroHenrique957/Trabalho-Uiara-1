@@ -53,10 +53,3 @@ document.querySelectorAll(".controls button").forEach((button) => {
   });
 });
 
-document.querySelector("#reset-button").addEventListener("click", () => {
-  state.A = { gols: 0, amarelos: 0, vermelhos: 0 };
-  state.B = { gols: 0, amarelos: 0, vermelhos: 0 };
-  atualizarPainel();
-  document.querySelector("#status").textContent =
-    "Sistema pronto. Aguardando início do jogo.";
-});
